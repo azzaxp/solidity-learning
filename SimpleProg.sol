@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
 
+// this program is to store information about students and then retrieve theor marks with results as pass or fail based on condition
+
 pragma solidity ^0.6.0;
 
 contract SimpleProg{
@@ -17,7 +19,7 @@ contract SimpleProg{
     }
 
     function passOrFail(string memory _name) view public returns(string memory _status){
-        if(studentMarks[_name] > 80){
+        if(studentMarks[_name] > 80){ // condition to determine pass or fail
             _status= "PASS";
         }
         else{
